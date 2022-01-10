@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Orbitron);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+main {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/bg_morning.jpg); }
+  main header {
+    width: 90vw;
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    main header h1 {
+      font: bold 30px/1 "orbitron";
+      color: #fff; }
+    main header #gnb {
+      display: flex; }
+      main header #gnb li {
+        margin: 0px 40px; }
+        main header #gnb li a {
+          font: bold 14px/1 "arial";
+          color: #fff; }
+    main header #sns {
+      display: flex; }
+      main header #sns li {
+        margin: 0px 10px; }
+        main header #sns li i {
+          font-size: 18px;
+          color: #fff; }
+  main article {
+    width: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 5vw;
+    transform: translateY(-50%); }
+    main article p {
+      font: 4vw/1 "orbitron";
+      color: #fff;
+      margin-bottom: 20px; }
+      main article p strong {
+        opacity: 0.7; }
+
+/*# sourceMappingURL=style.css.map */
