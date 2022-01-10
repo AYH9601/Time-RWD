@@ -1,6 +1,7 @@
 ﻿const numbers = document.querySelectorAll(".screen span");
 const main = document.querySelector("main");
 const menus = document.querySelectorAll("nav span");
+const [am, pm] = document.querySelectorAll(".screen em");
 
 setInterval(()=>{
     const times = setTime();
@@ -25,6 +26,13 @@ setInterval(()=>{
             menus[index].classList.add('on');
         }
     })
+
+    //afternoon 테마일때 글자 어둡게 보이게 하기 위한 조치
+    if(main.classList.contains("afternoon")){
+        main.classList.add("dark_text");
+    }else {
+        main.classList.remove("dark_text");
+    }
 
     // if(hr>=5 && hr<11){
     //     main.className = "";
@@ -61,8 +69,18 @@ function setTime(){
     let hr = now.getHours();
     let min = now.getMinutes();
     let sec = now.getSeconds();
+    let hr2 = null;
 
-    return[hr, min, sec];
+    if(hr>12){
+        hr2 = hr-12;
+        pm.classList.add("on")
+        am.classList.remove("on")
+    }else {
+        hr2 = hr;
+        am.classList.add("on");
+        pm.classList.remove("on");
+    }
+    return[hr2, min, sec];
 }
 
 //변환할 숫자값과 순서값을 인수로받아 숫자를 보정하고, 해당 인수의 부모요소에 값 적용
