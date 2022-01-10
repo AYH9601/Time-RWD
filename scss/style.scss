@@ -125,6 +125,11 @@ main {
         background-size: contain;
 
         .screen {
+            span {
+                display: inline-block;
+                width: 90px;
+            }
+
             width: 540px; height: 300px;
             position: absolute;
             top: 100px; left: 130px;

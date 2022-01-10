@@ -119,6 +119,9 @@ main {
       color: #fff;
       text-align: center;
       overflow: hidden; }
+      main figure .screen span {
+        display: inline-block;
+        width: 90px; }
   main nav {
     width: 90vw;
     height: 35px;
