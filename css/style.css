@@ -95,6 +95,20 @@ main {
     background-position: right top;
     background-repeat: no-repeat;
     background-size: contain; }
+    main figure .cl1 {
+      width: 300px;
+      position: absolute;
+      top: 0px;
+      left: -50%;
+      opacity: 0;
+      animation: cloud 40s linear 20s infinite; }
+    main figure .cl2 {
+      width: 300px;
+      position: absolute;
+      top: 5px;
+      left: -50%;
+      opacity: 0;
+      animation: cloud 40s linear 0s infinite; }
     main figure .screen {
       width: 540px;
       height: 300px;

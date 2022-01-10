@@ -95,6 +95,24 @@ main {
     }
 
     figure {
+        .cl1 {
+            width: 300px;
+            position: absolute;
+            top: 0px;
+            left: -50%;
+            opacity: 0;
+            animation: cloud 40s linear 20s infinite;
+        }
+    
+        .cl2 {
+            width: 300px;
+            position: absolute;
+            top: 5px;
+            left: -50%;
+            opacity: 0;
+            animation: cloud 40s linear 0s infinite;
+        }
+
         width: 1200px; height: 800px;
         position: absolute;
         right: -50px;
