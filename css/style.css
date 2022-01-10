@@ -57,5 +57,9 @@ main {
       margin-bottom: 20px; }
       main article p strong {
         opacity: 0.7; }
+    main article em {
+      font: bold 14px/1.2 "arial";
+      color: #fff;
+      letter-spacing: 2px; }
 
 /*# sourceMappingURL=style.css.map */
